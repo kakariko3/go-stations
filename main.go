@@ -52,5 +52,5 @@ func realMain() error {
 	mux := router.NewRouter(todoDB)
 
 	// TODO: ここから実装を行う
-	return http.ListenAndServe(":8080", mux)
+	return http.ListenAndServe(port, mux)
 }
